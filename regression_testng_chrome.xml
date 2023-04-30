@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite" preserve-order="true">
+    <listeners>
+        <listener class-name="base.TestListeners"/>
+    </listeners>
+    <test name="Application Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testClasses.PackageTests"/>
+        </classes>
+    </test>
+</suite>
